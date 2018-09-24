@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <style>
+      table {
+      border-spacing: 30px 0;
+      }
+    </style>
+    <title>   Occupations  </title>
+  </head>
+
+  <body>
+    <center>
+      <br>
+      <br>
+
+      Random occupation:    {{rand}}
+
+      <br>
+      <br>
+      <table>
+        <tr>
+          <th align="right">
+
+	    Occupation
+
+	  </th>
+          <th>
+
+	    Percentage
+
+	  </th>
+
+	  {% for i in range(6) %}
+
+	  <th>
+          </th>
+
+	  {% endfor %}
+
+	</tr>
+
+        {% for occ in od %}
+
+	<tr>
+          <td align="right">
+
+	    {{occ}}          
+
+	  </td>
+
+	  <td align="center">
+
+	    {{od[occ]}}
+
+	  </td>
+
+	  {% for i in range(6) %}
+
+	  <td>
+          </td>
+
+	  {% endfor %}
+
+	</tr>
+
+	{% endfor %}
+	
+      </table>
+    </center>
+  </body>
+</html>
