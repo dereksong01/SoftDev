@@ -7,7 +7,7 @@ from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
-@app.route("/")
+@app.route("/", methods = ["POST"])
 def display():
     return render_template("home.html")
 
