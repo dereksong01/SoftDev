@@ -7,11 +7,11 @@ from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
-@app.route("/", methods = ["POST"])
+@app.route("/")
 def display():
     return render_template("home.html")
 
-@app.route("/auth")
+@app.route("/auth", methods = ["POST"])
 def authenticate():
     username = request.args['username']
     method = request.method
