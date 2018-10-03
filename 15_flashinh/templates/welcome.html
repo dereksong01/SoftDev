@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Welcome</title>
-</head>
-<body>
-   <br>
-   <b><font size="7">Welcome {{user}}, how are you?</font></b>
-   <br>
-   <a href="/logout"> Logout</a>
-   <br>
-   <a href="/test"> Test if you're logged in here</a>
-</body>
-</html>
+{% extends "template.html" %}
+
+{% block title %} {{title}} {% endblock %}
+{% block content2 %}<a href="/logout"> Logout & try again</a>{% endblock %}

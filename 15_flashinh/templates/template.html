@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+   {% set msgs = get_flashed_messages() %}
+    {% for each in msgs %}
+      {{each}}
+    {% endfor %}
+   <br>
+   {% block content2 %}{% endblock %}
+   <br>
+   <a href="/test"> Test if you're logged in here</a>
+   <br>
+   <br>
+  &copy; Copyright Derek 2020
+</body>
+</html>
