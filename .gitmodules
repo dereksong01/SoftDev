@@ -1,3 +1,6 @@
 [submodule "workshop"]
 	path = workshop
 	url = https://github.com/stuy-softdev/workshop.git
+[submodule "Notes"]
+	path = Notes
+	url = https://github.com/stuy-softdev/notes-and-code.git
