@@ -1,7 +1,7 @@
-# DTong - Johnny Wong, Derek Song
+# KungFood - Johnny Wong, Sarar Aseer
 # SoftDev1 pd8
-# K17 -- Average
-# 2018-10-05
+# K16 -- No Trouble
+# 2018-10-04
 
 import sqlite3   #enable control of an sqlite database
 import csv       #facilitates CSV I/O
@@ -33,32 +33,23 @@ def insertInTable(file, tableName, columns):
             data = (row[columns[0]], row[columns[1]], row[columns[2]])
             c.execute(command.format(tableName, columns), data)
 
-def average(table1, table2):
-    '''
-    @columns should be a tuple of len 3 in order to access the row name in the csvfile
-    The other params should be Strings
-    '''
-    command = "SELECT {0}{1}{2} FROM {3}{4} WHERE students.id = courses.id;"
-    c.execute(command.format('name', students.id, 'mark', table1, table2))        
 #==========================================================
 
 
 #==========================================================
 # INSERT YOUR POPULATE CODE IN THIS ZONE
 
-# CREATE TABLE peeps TO HOLD peeps.csv INFO IN DB
-tableCreator('peeps', 'name', 'age', 'id')
+# CREATE TABLE students TO HOLD peeps.csv INFO IN DB
+tableCreator('students', 'name', 'age', 'id')
 
 # OPEN peeps.csv AND TRANSFERS DATA TO TABLE peeps
-insertInTable("peeps.csv", 'peeps', ('name', 'age', 'id'))
+insertInTable("peeps.csv", 'students', ('name', 'age', 'id'))
 
 # CREATE TABLE courses TO HOLD courses.csv INFO IN DB
 tableCreator('courses', 'code', 'mark', 'id')
 
 # OPEN courses.csv AND TRANSFERS DATA TO TABLE courses
 insertInTable("courses.csv", 'courses', ('code', 'mark', 'id'))
-
-tableCreater('peeps_avg', 'name', 'avg', 'id')
 #==========================================================
 
 db.commit() #save changes
