@@ -1,6 +1,6 @@
-# KungFood - Johnny Wong, Sarar Aseer
+# DTong - Johnny Wong, Derek Song
 # SoftDev1 pd8
-# K16 -- No Trouble
+# K17 -- Average
 # 2018-10-04
 
 import sqlite3   #enable control of an sqlite database
