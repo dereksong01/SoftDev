@@ -43,13 +43,13 @@ def insertInTable(file, tableName, columns):
 tableCreator('students', 'name', 'age', 'id')
 
 # OPEN peeps.csv AND TRANSFERS DATA TO TABLE peeps
-insertInTable("peeps.csv", 'students', ('name', 'age', 'id'))
+insertInTable("data/peeps.csv", 'students', ('name', 'age', 'id'))
 
 # CREATE TABLE courses TO HOLD courses.csv INFO IN DB
 tableCreator('courses', 'code', 'mark', 'id')
 
 # OPEN courses.csv AND TRANSFERS DATA TO TABLE courses
-insertInTable("courses.csv", 'courses', ('code', 'mark', 'id'))
+insertInTable("data/courses.csv", 'courses', ('code', 'mark', 'id'))
 #==========================================================
 
 db.commit() #save changes
