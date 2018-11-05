@@ -4,3 +4,9 @@
 [submodule "Notes"]
 	path = Notes
 	url = https://github.com/stuy-softdev/notes-and-code.git
+[submodule "P00"]
+	path = P00
+	url = https://github.com/simont1/Gudetama.git
+[submodule "LAB0"]
+	path = LAB0
+	url = https://github.com/simont1/Gudetama.git
