@@ -19,3 +19,6 @@
 [submodule "23_bt_astro0_songD-wangZ"]
 	path = 23_bt_astro0_songD-wangZ
 	url = https://github.com/zane0916/hw23_astro0.git
+[submodule "L0"]
+	path = L0
+	url = https://github.com/simont1/Gudetama.git
