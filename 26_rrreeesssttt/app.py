@@ -19,7 +19,7 @@ def home():
 
     # accessing and reading api
     url = 'https://od-api.oxforddictionaries.com:443/api/v1/entries/'  + language + '/'  + word.lower()
-    u = requests.get(url, headers={'app_id':app_id, 'app_key':app_key})
+    u = request.get(url, headers={'app_id':app_id, 'app_key':app_key})
 
     #converting the json object string into a dict
     info = json.loads(u.text)
