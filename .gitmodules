@@ -25,3 +25,6 @@
 [submodule "L1"]
 	path = L1
 	url = https://github.com/AntonDanylenko/ApumpkinPI.git
+[submodule "Lab1"]
+	path = Lab1
+	url = https://github.com/AntonDanylenko/ApumpkinPI.git
