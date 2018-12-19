@@ -25,9 +25,10 @@ var gcd = (a, b) => {
 var students = ["bob", "sally", "john", "john2"];
 
 var randomNumber = () => {
-  return Math.random() * 3
+    return Math.floor(Math.random() * students.length);
 }
+
 var randomStudent = () => {
-  randIndex = randomNumber();
+  var randIndex = randomNumber();
   return students[randIndex];
 }
