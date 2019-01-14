@@ -31,3 +31,6 @@
 [submodule "Workshop"]
 	path = Workshop
 	url = https://github.com/stuy-softdev/workshop.git
+[submodule "FinalPJ"]
+	path = FinalPJ
+	url = https://github.com/KendrickLiang/Softdev_Project02.git
